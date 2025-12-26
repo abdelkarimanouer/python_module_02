@@ -23,7 +23,7 @@ def garden_operations(type: str):
             v = my_dict["bob"]
             print(v)
         except KeyError:
-            print("Caught KeyError: \'missing\\_plant")
+            print("Caught KeyError: \'missing\\_plant\'")
     elif type == "multiple":
         try:
             x = int("abc")
