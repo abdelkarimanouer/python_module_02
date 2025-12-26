@@ -33,7 +33,6 @@ def garden_operations(type: str):
 
 
 def test_error_types():
-
     print("\nTesting ValueError...")
     garden_operations("ValueError")
 
