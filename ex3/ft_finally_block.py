@@ -2,13 +2,13 @@ def water_plants(plant_list):
     success = False
     try:
         print("Opening watering system")
-        i = 0
-        while i < len(plant_list):
-            print(f"Watering {plant_list[i]}")
-            i += 1
+        for plant in plant_list:
+            if plant is None:
+                raise Exception("Cannot water None - invalid plant!")
+            print(f"Watering {plant}")
         success = True
-    except Exception:
-        print("Error: Cannot water None - invalid plant!")
+    except Exception as e:
+        print("Error:", e)
         success = False
     finally:
         print("Closing watering system (cleanup)")
