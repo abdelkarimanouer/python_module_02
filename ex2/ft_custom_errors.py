@@ -49,9 +49,8 @@ def test_errors():
     print("\nTesting catching all garden errors...")
     test_garden_error()
 
-    print("\nAll custom error types work correctly!")
-
 
 if __name__ == "__main__":
     print("=== Custom Garden Errors Demo ===")
     test_errors()
+    print("\nAll custom error types work correctly!")
